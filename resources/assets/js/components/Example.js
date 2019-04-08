@@ -245,6 +245,7 @@ export default class Example extends Component {
         }
         return (
             <div className="container">
+                <div onClick={this.handleAddNewClient}  className="addNew"><span className="glyphicon glyphicon-plus-sign"></span>Add New Customer</div>
                 {divCenter}{addNewCustomerPopUp}
                 <div hidden={this.state.modalIsHiden}>
                 </div>
@@ -253,7 +254,7 @@ export default class Example extends Component {
                     <thead className="thead-inverse">
                     <tr>
                         <th>#</th>
-                        <th>Name <span onClick={this.handleAddNewClient} className="addNewCustomer glyphicon glyphicon-plus-sign"> </span></th>
+                        <th>Name</th>
                         <th>Lastnames</th>
                         <th>Phone</th>
                         <th>Email</th>
@@ -270,7 +271,7 @@ export default class Example extends Component {
                             <td>{item.phone}</td>
                             <td>{item.email}</td>
                             <td>{item.card}</td>
-                            <td onClick={ () => this.handleActions(item.id,item.name,item.lastnames,item.phone,item.email,item.card)}><span className="glyphicon glyphicon-globe"> </span> </td>
+                            <td onClick={ () => this.handleActions(item.id,item.name,item.lastnames,item.phone,item.email,item.card)}><span className="pointer glyphicon glyphicon-globe"> </span> </td>
                         </tr>
                     )}
                     </tbody>

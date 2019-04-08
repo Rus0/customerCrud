@@ -8375,3 +8375,21 @@ button.close {
   margin: 10px;
 }
 
+.addNew {
+  color: #fff;
+  background-color: #3097D1;
+  margin: 10px;
+  padding: 10px;
+  letter-spacing: normal;
+  float: right;
+  cursor: pointer;
+}
+
+.addNew .glyphicon {
+  margin-right: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+

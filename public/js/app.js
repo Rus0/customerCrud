@@ -54825,6 +54825,12 @@ var Example = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { onClick: this.handleAddNewClient, className: 'addNew' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'glyphicon glyphicon-plus-sign' }),
+                    'Add New Customer'
+                ),
                 divCenter,
                 addNewCustomerPopUp,
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { hidden: this.state.modalIsHiden }),
@@ -54846,12 +54852,7 @@ var Example = function (_Component) {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'th',
                                 null,
-                                'Name ',
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'span',
-                                    { onClick: this.handleAddNewClient, className: 'addNewCustomer glyphicon glyphicon-plus-sign' },
-                                    ' '
-                                )
+                                'Name'
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'th',
@@ -54926,7 +54927,7 @@ var Example = function (_Component) {
                                         } },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'span',
-                                        { className: 'glyphicon glyphicon-globe' },
+                                        { className: 'pointer glyphicon glyphicon-globe' },
                                         ' '
                                     ),
                                     ' '
